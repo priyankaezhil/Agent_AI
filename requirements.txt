@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pandas
+langchain
+google-generativeai
+sqlalchemy
+python-dotenv
+matplotlib
+plotly
