@@ -1,11 +1,9 @@
 import sqlite3
 import ollama
 
-# Connect to your local ecommerce.db file
 conn = sqlite3.connect("ecommerce.db")
 cursor = conn.cursor()
 
-# Start conversation loop
 print("Ask a question about the E-commerce data (or type 'exit'):")
 
 while True:
@@ -14,7 +12,6 @@ while True:
     if question.lower() in ['exit', 'quit']:
         break
 
-    # Generate SQL query using LLaMA 3 via Ollama
     try:
         response = ollama.chat(
             model='llama3',
@@ -37,11 +34,9 @@ while True:
             print("⚠️ No valid SELECT SQL query was generated.")
             continue
 
-        # Run the SQL query
         cursor.execute(sql_query)
         result = cursor.fetchall()
 
-        # Show the result
         if not result:
             print("No results found.\n")
         else:
