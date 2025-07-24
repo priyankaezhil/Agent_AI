@@ -1,6 +1,7 @@
 Agent AI — E-commerce Data Question Answering System
 
 Overview:
+
 Agent AI is an intelligent agent built to answer natural language questions about an e-commerce dataset. By combining the power of LLMs (like LLaMA 3) with SQL and FastAPI, this system transforms structured data into conversational insights. This project is ideal for teams that want to explore how AI can interface with real-time data without building full dashboards or writing SQL manually.
 
 Key Features:
